@@ -1,29 +1,97 @@
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
-html, body {
-	margin:0px;
-	padding:0px;
-	height:100%;
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
 }
 
 html {
-		/* Standard text-settings below */
+	/* Standard text-settings below */
 	font-size: 1em;
-    line-height: 1.4em;
+	line-height: 1.4em;
 }
 
 
 
 
-body {
-	
-	
+body {}
+
+.windsong-regular {
+	font-family: "WindSong", cursive;
+	font-weight: 400;
+	font-style: normal;
 }
 
+.windsong-medium {
+	font-family: "WindSong", cursive;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.kranky-regular {
+	font-family: "Kranky", serif;
+	font-weight: 400;
+	font-style: normal;
+}
 
 #container {
-	
+	font-size: 60px;
+
 }
 
+#vincent {
+	padding: 48px;
+	letter-spacing: 8px;
+	color: #a07301;
+}
 
+#a {
+	padding: 48px;
+	color: #a07301;
+}
 
+#n {
+	padding: 48px;
+	color: #a07301;
+}
 
+#gogh_container {
+	font-size: 120px;
+	position: relative;
+	transform: rotate(180deg);
+	top: -100px;
+	right: 400px;
+	color: #a07301;
+}
+
+#quote_container {
+	padding: 10px 10px 10px 240px;
+}
+
+#la {
+	text-shadow: 2px 2px 5px #012872;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	color: #0050e6;
+}
+
+#tristesse {
+	text-shadow: 2px 2px 5px #012872;
+	padding-bottom: 50px;
+	padding-left: 100px;
+	color: #0050e6;
+}
+
+#durera {
+	text-shadow: 2px 2px 5px #012872;
+	padding-bottom: 50px;
+	padding-left: 200px;
+	color: #0050e6;
+}
+
+#toujours {
+	text-shadow: 2px 2px 5px #012872;
+	padding-left: 300px;
+	color: #0050e6;
+}
