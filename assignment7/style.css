@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>They Walk Among Us</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+</head>
+
+
+<body>
+
+<div id="container">
+  
+  
+<header>
+	<h1>They Walk Among Us</h1>
+</header>
+  
+<nav>
+	<ul>
+		<li><a href="#">Link 1</a></li>
+		<li><a href="#">Link 2</a></li>
+		<li><a href="#">Link 3</a></li>
+		<li><a href="#">Link 4</a></li>
+		<li><a href="#">Link 5</a></li>
+		<li><a href="#">Link 6</a></li>
+		<li><a href="#">Link 7</a></li>
+		<li><a href="#">Link 8</a></li>
+	</ul>
+</nav>
+
+
+
+<main>
+
+
+<!-- <figure> is the first child of <main> -->
+	
+	<figure class="responsive">
+		<iframe width="560" height="315" src="https://youtu.be/MziaZyjFOAM?si=vwxrHZNuKkC21rPL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</figure>
+
+
+
+
+
+
+
+
+<!-- <section> is the second child of <main> -->
+	<section>
+	
+	<p>Duendes are small, mythical creatures found in the folklore of various cultures, particularly in
+    Spain and Latin America. They are often described as mischievous beings, sometimes helping
+    humans but other times causing trouble by stealing objects, making noises in the night, or
+    leading travelers astray. Duendes falls into what can be called a "fictitious truth" a narrative that,
+    while not verifiably real, holds cultural significance and remains compelling across generations.</p>
+    
+    <p>The concept of a fictitious truth is fascinating because it illustrates how myths and legends serve
+    a deeper purpose beyond mere storytelling. They convey cultural values, explain the
+    unexplainable, and provide comfort or warnings. Whether or not duendes exist in reality, their
+    presence in folklore suggests an enduring need to personify the mysterious and unpredictable
+    aspects of life. To me, this is intriguing because it highlights how people across different cultures
+    create similar mythological beings to make sense of their experiences. Duendes embodies the
+    dual nature of tricksters both helpful and deceitful, reinforcing the idea that life itself is
+    unpredictable and nuanced.
+     </p>
+		
+
+	</section>
+
+
+<figure>
+		<img src="img/history.jpg" alt="Witch amd Spirit">
+		<figcaption>Image from <a href="" target="_blank">alamy.com</a></figcaption>
+	</figure>
+
+
+
+</main>
+
+
+</div><!-- close "container" -->
+  
+
+</body>
+	
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+	<p>&#169;Jailene Campos 2025 </p>
+</footer>
