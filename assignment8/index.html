@@ -133,6 +133,14 @@
             height: auto;
             border-radius: 6px;
             margin-bottom: 1rem;
+            display: block;
+        }
+        
+        /* Styling specifically for the cherry blossom SVG image */
+        .cherry-blossom {
+            max-width: 100%;
+            margin: 0 auto;
+            display: block;
         }
         
         figcaption {
@@ -245,13 +253,71 @@
         </section>
         
         <figure id="trunk" class="responsive">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dFYMOzoSDNE" title="The Growth Journey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <figcaption>The journey of growth is never linear, but always meaningful</figcaption>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LjCzPp-MK48" title="The Growth Journey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figcaption>Witnessing the journey of a plant from seed to bloom reminds us of our own capacity for transformation</figcaption>
         </figure>
         
         <figure id="bloom">
-            <img src="/api/placeholder/400/320" alt="A blooming flower representing transformation and growth">
-            <figcaption>After struggle comes beauty. The bloom is not just the reward, but a new beginning.</figcaption>
+            <svg class="cherry-blossom" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <!-- Branch -->
+                <path d="M 100 250 Q 200 180 300 250" stroke="#8d6e63" stroke-width="5" fill="none" />
+                
+                <!-- Blossoms -->
+                <g id="blossom1" transform="translate(120, 200)">
+                    <circle cx="0" cy="0" r="15" fill="#f8bbd0" />
+                    <circle cx="8" cy="-8" r="10" fill="#f8bbd0" />
+                    <circle cx="-8" cy="-8" r="10" fill="#f8bbd0" />
+                    <circle cx="8" cy="8" r="10" fill="#f8bbd0" />
+                    <circle cx="-8" cy="8" r="10" fill="#f8bbd0" />
+                    <circle cx="0" cy="0" r="5" fill="#ffcc80" />
+                </g>
+                
+                <g id="blossom2" transform="translate(160, 180)">
+                    <circle cx="0" cy="0" r="15" fill="#f8bbd0" />
+                    <circle cx="8" cy="-8" r="10" fill="#f8bbd0" />
+                    <circle cx="-8" cy="-8" r="10" fill="#f8bbd0" />
+                    <circle cx="8" cy="8" r="10" fill="#f8bbd0" />
+                    <circle cx="-8" cy="8" r="10" fill="#f8bbd0" />
+                    <circle cx="0" cy="0" r="5" fill="#ffcc80" />
+                </g>
+                
+                <g id="blossom3" transform="translate(200, 170)">
+                    <circle cx="0" cy="0" r="18" fill="#f8bbd0" />
+                    <circle cx="10" cy="-10" r="12" fill="#f8bbd0" />
+                    <circle cx="-10" cy="-10" r="12" fill="#f8bbd0" />
+                    <circle cx="10" cy="10" r="12" fill="#f8bbd0" />
+                    <circle cx="-10" cy="10" r="12" fill="#f8bbd0" />
+                    <circle cx="0" cy="0" r="6" fill="#ffcc80" />
+                </g>
+                
+                <g id="blossom4" transform="translate(240, 185)">
+                    <circle cx="0" cy="0" r="15" fill="#f8bbd0" />
+                    <circle cx="8" cy="-8" r="10" fill="#f8bbd0" />
+                    <circle cx="-8" cy="-8" r="10" fill="#f8bbd0" />
+                    <circle cx="8" cy="8" r="10" fill="#f8bbd0" />
+                    <circle cx="-8" cy="8" r="10" fill="#f8bbd0" />
+                    <circle cx="0" cy="0" r="5" fill="#ffcc80" />
+                </g>
+                
+                <g id="blossom5" transform="translate(280, 210)">
+                    <circle cx="0" cy="0" r="16" fill="#f8bbd0" />
+                    <circle cx="9" cy="-9" r="11" fill="#f8bbd0" />
+                    <circle cx="-9" cy="-9" r="11" fill="#f8bbd0" />
+                    <circle cx="9" cy="9" r="11" fill="#f8bbd0" />
+                    <circle cx="-9" cy="9" r="11" fill="#f8bbd0" />
+                    <circle cx="0" cy="0" r="5" fill="#ffcc80" />
+                </g>
+                
+                <!-- Falling petals -->
+                <circle cx="140" cy="220" r="5" fill="#f8bbd0" opacity="0.7" />
+                <circle cx="180" cy="240" r="4" fill="#f8bbd0" opacity="0.7" />
+                <circle cx="220" cy="230" r="6" fill="#f8bbd0" opacity="0.7" />
+                <circle cx="260" cy="250" r="5" fill="#f8bbd0" opacity="0.7" />
+                <circle cx="150" cy="260" r="4" fill="#f8bbd0" opacity="0.7" />
+                <circle cx="200" cy="270" r="3" fill="#f8bbd0" opacity="0.7" />
+                <circle cx="250" cy="260" r="4" fill="#f8bbd0" opacity="0.7" />
+            </svg>
+            <figcaption>Cherry blossoms symbolize the ephemeral nature of beauty and the transformative power of renewal.</figcaption>
         </figure>
     </div>
 
@@ -297,6 +363,29 @@
             }, function() {
                 $(this).css("letter-spacing", "normal");
             });
+            
+            // Add animation to the cherry blossoms when they appear
+            $("#button-bloom").click(function() {
+                if($("#bloom").is(":visible")) {
+                    $(".cherry-blossom g").each(function(index) {
+                        $(this).css({
+                            "transform-origin": "center",
+                            "animation": `bloom ${index * 0.2 + 0.5}s ease-out`
+                        });
+                    });
+                }
+            });
+            
+            // Add the animation style dynamically
+            $("<style>")
+                .prop("type", "text/css")
+                .html(`
+                    @keyframes bloom {
+                        0% { transform: scale(0); opacity: 0; }
+                        100% { transform: scale(1); opacity: 1; }
+                    }
+                `)
+                .appendTo("head");
         });
     </script>
 </body>
