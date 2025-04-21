@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #f7f9f7;
+            color: #333;
+            line-height: 1.6;
+            padding: 1rem;
+        }
+        
+        #container {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 1rem;
+            position: relative;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #2c5e35;
+            margin-bottom: 0.5rem;
+            transition: all 0.5s ease;
+        }
+        
+        .initial-content {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease;
+        }
+        
+        .initial-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+        
+        .initial-content .attribution {
+            font-size: 0.9rem;
+            font-style: normal;
+            text-align: right;
+            color: #666;
+        }
+        
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        button {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 30px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        #button-roots {
+            background-color: #5d4037;
+            color: #fff;
+        }
+        
+        #button-trunk {
+            background-color: #8d6e63;
+            color: #fff;
+        }
+        
+        #button-bloom {
+            background-color: #81c784;
+            color: #fff;
+        }
+        
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Hidden content styling */
+        #roots, #trunk, #bloom {
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease;
+        }
+        
+        #roots {
+            border-left: 5px solid #5d4037;
+        }
+        
+        #trunk {
+            border-left: 5px solid #8d6e63;
+        }
+        
+        #bloom {
+            border-left: 5px solid #81c784;
+        }
+        
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+        
+        figcaption {
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+            font-style: italic;
+        }
+        
+        figure.responsive {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        
+        figure.responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        section h2 {
+            font-family: 'Playfair Display', serif;
+            color: #2c5e35;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        section p {
+            margin-bottom: 1rem;
+        }
+        
+        /* Media query for desktop view */
+        @media screen and (min-width: 768px) {
+            body {
+                padding: 2rem;
+            }
+            
+            #container {
+                max-width: 1200px;
+                padding: 2rem;
+            }
+            
+            h1 {
+                font-size: 3.5rem;
+            }
+            
+            .initial-content {
+                max-width: 700px;
+                margin: 0 auto 3rem;
+                padding: 2rem;
+            }
+            
+            .button-container {
+                flex-direction: row;
+                justify-content: center;
+            }
+            
+            #roots, #trunk, #bloom {
+                position: absolute;
+                width: 350px;
+                max-width: 30%;
+            }
+            
+            #roots {
+                top: 450px;
+                left: 5%;
+            }
+            
+            #trunk {
+                top: 350px;
+                right: 5%;
+            }
+            
+            #bloom {
+                top: 650px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Growth</h1>
+        </header>
+        
+        <div class="initial-content">
+            <p>"In the depths of winter, I finally learned that within me there lay an invincible summer."</p>
+            <p class="attribution">— Albert Camus</p>
+        </div>
+        
+        <div class="button-container">
+            <button id="button-roots">Roots</button>
+            <button id="button-trunk">Journey</button>
+            <button id="button-bloom">Bloom</button>
+        </div>
+        
+        <!-- Hidden content pieces -->
+        <section id="roots">
+            <h2>The Beginning</h2>
+            <p>Every meaningful growth begins in darkness, in the quiet depths where we retreat to nurture our strength.</p>
+            <p>Like seeds beneath the soil, we gather resources, prepare, and wait for the right moment to push upward. This space of apparent stillness is where transformation truly begins.</p>
+            <p>The internal work done in these moments—reflection, healing, learning—forms the foundation that supports all future expansion.</p>
+        </section>
+        
+        <figure id="trunk" class="responsive">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dFYMOzoSDNE" title="The Growth Journey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figcaption>The journey of growth is never linear, but always meaningful</figcaption>
+        </figure>
+        
+        <figure id="bloom">
+            <img src="/api/placeholder/400/320" alt="A blooming flower representing transformation and growth">
+            <figcaption>After struggle comes beauty. The bloom is not just the reward, but a new beginning.</figcaption>
+        </figure>
+    </div>
+
+    <!-- Link to jQuery on Google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>   
+    <script>
+        $(document).ready(function() {
+            // Hide all hidden content initially
+            $("#roots").hide();
+            $("#trunk").hide();
+            $("#bloom").hide();
+            
+            // Toggle functions for each button
+            $("#button-roots").click(function() {
+                $("#roots").fadeToggle(800);
+                
+                // Extra animation for desktop view
+                if ($(window).width() >= 768) {
+                    $(".initial-content").toggleClass("shifted");
+                }
+            });
+            
+            $("#button-trunk").click(function() {
+                $("#trunk").slideToggle(800);
+            });
+            
+            $("#button-bloom").click(function() {
+                $("#bloom").fadeToggle(800);
+                // When bloom is revealed, add a subtle animation to the main title
+                $("h1").toggleClass("highlighted");
+            });
+            
+            // Add some CSS classes dynamically
+            $("h1").hover(function() {
+                $(this).css("color", "#4caf50");
+            }, function() {
+                $(this).css("color", "#2c5e35");
+            });
+            
+            // Make the entire experience more interactive
+            $(".button-container button").hover(function() {
+                $(this).css("letter-spacing", "1px");
+            }, function() {
+                $(this).css("letter-spacing", "normal");
+            });
+        });
+    </script>
+</body>
+</html>
