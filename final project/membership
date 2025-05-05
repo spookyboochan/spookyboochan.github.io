@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Membership</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>DUENDES</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="lore.html">Lore</a>
+      <a href="gallery.html">Gallery Shop</a>
+      <a href="about.html">About</a>
+      <a href="memorial.html">Memorial</a>
+      <a href="research.html">Research</a>
+      <a href="membership.html" class="active">Membership</a>
+    </nav>
+  </header>
+  <main class="form-page">
+    <h2>Become a Watcher</h2>
+    <p>Only those who truly believe may proceed. Respect is your only shield.</p>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+      <label for="message">What have you seen?</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+      <label><input type="checkbox" required /> I acknowledge the risks of knowing.</label>
+      <button type="submit">Join the Circle</button>
+    </form>
+  </main>
+  <footer>
+    <p>© 2025 DUENDES</p>
+  </footer>
+</body>
+</html>

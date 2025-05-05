@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lore</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>DUENDES</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="lore.html" class="active">Lore</a>
+      <a href="gallery.html">Gallery Shop</a>
+      <a href="about.html">About</a>
+      <a href="memorial.html">Memorial</a>
+      <a href="research.html">Research</a>
+      <a href="membership.html">Membership</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Lore</h2>
+    <p>Duendes are real. They have always been among us...</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MziaqZyIFOAM" frameborder="0" allowfullscreen></iframe>
+  </main>
+  <footer>
+    <p>© 2025 DUENDES</p>
+  </footer>
+</body>
+</html>

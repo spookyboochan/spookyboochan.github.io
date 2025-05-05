@@ -4,27 +4,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DUENDES - Home</title>
+  <title>About</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Duendes Logo" class="logo" style="max-width: 200px; margin-top: 1rem;" />
     <h1>DUENDES</h1>
     <nav>
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html">Home</a>
       <a href="lore.html">Lore</a>
       <a href="gallery.html">Gallery Shop</a>
-      <a href="about.html">About</a>
+      <a href="about.html" class="active">About</a>
       <a href="memorial.html">Memorial</a>
       <a href="research.html">Research</a>
       <a href="membership.html">Membership</a>
     </nav>
   </header>
   <main>
-    <h2>They Walk Among Us</h2>
-    <img src="https://via.placeholder.com/200x200" alt="Duendes logo" />
-    <p>Welcome to the official Duendes archive. Explore with caution.</p>
+    <h2>About</h2>
+    <p>If you’ve heard them or seen them, you are not alone.</p>
   </main>
   <footer>
     <p>© 2025 DUENDES</p>
