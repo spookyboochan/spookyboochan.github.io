@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>They Walk Among Us</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="your-logo.png" alt="Duende Logo" class="logo"/>
+    <h1>They Walk Among Us</h1>
+    <div class="nav-buttons">
+      <a href="#lore">LORE</a>
+      <a href="#shop">GALLERY SHOP</a>
+      <a href="#about">ABOUT</a>
+      <a href="#membership">MEMBERSHIP</a>
+      <a href="#memorial">MEMORIAL</a>
+    </div>
+  </section>
+
+  <!-- Lore Section -->
+  <section id="lore" class="section">
+    <h2>The Lore</h2>
+    <div class="lore-content">
+      <div class="lore-text">
+        <p>Duendes are not myths — they are real, and they are watching. Known across cultures as protectors, tricksters, or hidden ones, these small beings appear where you least expect them.</p>
+        <p>This video documents a rare encounter. Watch carefully.</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/your-video" title="Duende Sighting" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="lore-images">
+        <img src="placeholder1.jpg" alt="Sighting 1"/>
+        <img src="placeholder2.jpg" alt="Sighting 2"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Shop -->
+  <section id="shop" class="section">
+    <h2>Gallery Shop</h2>
+    <div class="shop-grid">
+      <div>
+        <img src="duende1.jpg" alt="Doll 1"/>
+        <p>Chispa<br>$45</p>
+      </div>
+      <div>
+        <img src="duende2.jpg" alt="Doll 2"/>
+        <p>Flor<br>$50</p>
+      </div>
+      <div>
+        <img src="duende3.jpg" alt="Doll 3"/>
+        <p>Mateo<br>$48</p>
+      </div>
+      <div>
+        <img src="duende4.jpg" alt="Doll 4"/>
+        <p>Luna<br>$55</p>
+      </div>
+      <div>
+        <img src="duende5.jpg" alt="Doll 5"/>
+        <p>Sal<br>$47</p>
+      </div>
+      <div>
+        <img src="duende6.jpg" alt="Doll 6"/>
+        <p>Niebla<br>$52</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About</h2>
+    <div class="about-content">
+      <p>They’ve always been here. “Duendes” have been part of global folklore for centuries, taking many names and forms. Our work honors their presence, questions reality, and preserves collective memory of the unexplainable.</p>
+      <img src="sketch.jpg" alt="Duende Sketch"/>
+    </div>
+  </section>
+
+  <!-- Membership Section -->
+  <section id="membership" class="section">
+    <h2>Join the Watchers</h2>
+    <p>Become part of our collective memory by symbolically joining the Watchers — those who refuse to forget. Membership is free and open to all who believe in the unseen truths. Add your name, share a story, or simply witness.</p>
+    <form id="membershipForm" onsubmit="handleSubmit(event)">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"><br>
+      
+        <label for="message">Message or Encounter:</label><br>
+        <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 0.5rem;"></textarea><br>
+      
+        <button type="submit" style="margin-top: 1rem; background-color: #9b593f; color: white; border: none; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer;">Submit</button>
+      </form>
+      
+      <!-- Hidden thank you message -->
+      <p id="thankYouMessage" style="display: none; margin-top: 1.5rem; color: #4b2c20; font-weight: bold;">
+        Thank you for joining. You are now part of the Watchers.
+      </p>
+    </form>
+  </section>
+
+  <!-- Memorial Section -->
+  <section id="memorial" class="section" style="background-color: #fff0e6;">
+    <h2>In Memory</h2>
+    <p>We honor those who have vanished — taken, transformed, or simply gone. Below are names and symbols to help us remember. Additions are welcome.</p>
+    <ul style="margin-top: 2rem; line-height: 2;">
+      <li>🌿 Elena M. — Seen last under the fig tree</li>
+      <li>🪶 Tomas I. — Left a note, vanished by sunrise</li>
+      <li>🍄 Yuli A. — Their sketchbook was found on the forest path</li>
+      <li>🕸 More coming soon...</li>
+    </ul>
+  </section>
+
+</body>
+</html>
