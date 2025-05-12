@@ -5,6 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lore</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .lore-intro {
+      font-style: italic;
+      color: #4d2c1a;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    blockquote {
+      font-size: 1.05rem;
+      color: #6b4c36;
+      border-left: 4px solid #8b4513;
+      padding-left: 1rem;
+      margin: 1.5rem auto;
+      max-width: 600px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      padding-top: 25px;
+      height: 0;
+      margin-top: 2rem;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -19,13 +58,44 @@
       <a href="membership.html">Membership</a>
     </nav>
   </header>
+
   <main>
     <h2>Lore</h2>
-    <p>Duendes are real. They have always been among us...</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/MziaqZyIFOAM" frameborder="0" allowfullscreen></iframe>
+
+    <p class="lore-intro">
+      Long before humans claimed the forests, duendes walked quietly among the roots and shadows. Their stories are not written in books — they’re whispered by trees, carried in wind, and etched into forgotten stones.
+    </p>
+
+    <blockquote>
+      "You don’t find a duende. A duende finds you — if you’re lucky… or very, very unlucky."
+    </blockquote>
+
+    <p>
+      From Mexico to the Philippines, from whispered childhood warnings to ancient rituals, the lore of duendes spans generations. Some say they protect the wild. Others call them tricksters. But all agree: they are real — and they remember everything.
+    </p>
+
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/MziaqZyIFOAM" title="Duendes Lore Video" frameborder="0" allowfullscreen></iframe>
+    </div>
   </main>
+
   <footer>
     <p>© 2025 DUENDES</p>
   </footer>
+
+  <!-- Ambient Forest Sound (Optional) -->
+  <audio id="forestAudio" loop>
+    <source src="forest-sounds.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <script>
+    document.addEventListener("click", function () {
+      const audio = document.getElementById("forestAudio");
+      if (audio && audio.paused) {
+        audio.volume = 0.4;
+        audio.play().catch(() => {});
+      }
+    }, { once: true });
+  </script>
 </body>
 </html>
